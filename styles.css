@@ -1,0 +1,273 @@
+/* Custom Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header-section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  overflow: hidden;
+}
+
+.header-bg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.header-content {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 5%;
+}
+
+.header-text {
+  text-align: left;
+}
+
+.header-title {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.text-runner {
+  font-size: 1.5rem;
+  margin-bottom: 20px; /* added margin-bottom to space out the button */
+}
+
+.cursor {
+  animation: blink 0.7s step-end infinite;
+  font-weight: bold;
+  color: white;
+}
+
+.header-image img {
+  max-width: 100%;
+  height: auto;
+  max-height: 100vh;
+  animation: move 5s linear infinite;
+}
+
+@keyframes blink {
+  from, to {
+      color: transparent;
+  }
+  50% {
+      color: white;
+  }
+}
+
+@keyframes move {
+  0% {
+      transform: translateX(0);
+  }
+  50% {
+      transform: translateX(20px);
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #343a40;
+    color: white;
+}
+
+.card {
+    transition: transform 0.3s ease;
+    border: none;
+  }
+  .card:hover {
+    transform: scaleY(1.05);
+    border-bottom: 11px solid rgba(0, 0, 255, 0.315);
+    border-radius: 12px;
+    /* background-color: rgb(92, 104, 104); */
+  }
+  .card img {
+    height: 200px; /* Adjust as needed */
+    object-fit: cover;
+  }
+
+  .card img:hover{
+    filter: grayscale(50);
+  }
+
+  .portfolio-section {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+  }
+  .portfolio-btns {
+    margin-bottom: 20px;
+  }
+  .portfolio-btns .btn {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+  }
+  .portfolio-btns .btn:hover {
+    background-color: #6c757d;
+  }
+  .project-grid {
+    margin-top: 20px;
+  }
+  .project-item {
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+  }
+  .project-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire container */
+    display: block;
+  }
+  .project-item:hover {
+    transform: translateY(-5px);
+    filter: grayscale(30);
+  }
+  .project-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.7);
+    color: #fff;
+    padding: 10px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+  }
+  .project-item:hover .project-overlay {
+    transform: translateY(0);
+  }
+  .project-icons {
+    display: flex;
+    justify-content: center;
+  }
+  .project-icons a {
+    color: #fff;
+    margin: 0 5px;
+    transition: color 0.3s ease;
+  }
+  .project-icons a:hover {
+    color: #ffc107;
+  }
+
+#l{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    /* margin: 2px; */
+    height: 20vh;
+    align-items: center;
+}
+
+/* .col{
+  border: 1px solid black;
+  /* margin: 2px; */
+/* } */ 
+
+.card-body{
+  border: 1px solid black;
+  box-shadow: blue;
+  border-radius: 3px;
+
+
+}
+
+
+
+
+/* Blogs Section Styles */
+.blogs-section {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background-color: #007bff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+}
+
+.blog-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.blog-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.blog-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.blog-content {
+  padding: 20px;
+}
+
+.blog-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.blog-excerpt {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.read-more {
+  font-size: 1rem;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.read-more:hover {
+  color: #0056b3;
+}

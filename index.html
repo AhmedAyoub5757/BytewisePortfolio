@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PortFolio Website</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Ahmed Ayoub</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#About">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blogs">Blogs</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#ms"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+
+              >
+                Services
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Web Development</a></li>
+                <li><a class="dropdown-item" href="#">Data Analysis</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Programming</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">UI/UX Design</a>
+                </li>
+              </ul>
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#c">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    
+
+    <header class="header-section">
+      <div class="header-bg">
+          <img src="endless- 2.svg" alt="Background SVG" />
+      </div>
+      
+      <div class="header-content">
+          <div class="header-text">
+              <h1 class="header-title">Ahmed Ayoub</h1>
+              <div class="text-runner">
+                  <span id="typed-text"></span><span class="cursor">|</span>
+              </div>
+              <button class="btn btn-primary" onclick="downloadCV()">Download CV</button>
+
+          </div>
+          <div class="header-image">
+              <img src="svg.png" alt="SVG Image" class="animated-svg" />
+          </div>
+      </div>
+  </header>
+  
+
+    <div class="container mt-4" id="About" >
+      <div class="row">
+        <!-- Left Column -->
+        <div class="col-md-6">
+          <!-- First Row - Picture and Primary Details -->
+          <div class="row mb-4">
+            <div class="col-md-4">
+              <img
+                src="toonmecom_781f79.jpg
+              "
+                class="img-fluid rounded-circle"
+                alt="Ahmed Ayoub"
+              />
+            </div>
+            <div class="col-md-8">
+              <h2>Ahmed Ayoub</h2>
+              <p>Location: Tando Allahyar</p>
+              <p>Education: BSCS</p>
+              <p>Email: abc@example.com</p>
+              <p>Phone: +1234567890</p>
+            </div>
+          </div>
+
+          <!-- Second Row - Skills with Progress Bars -->
+          <div class="row">
+            <div class="col-md-12">
+              <h4>Skills</h4>
+              <!-- Example progress bar for one skill, repeat for others -->
+              <div class="progress">
+                <div
+                  class="progress-bar bg-success"
+                  role="progressbar"
+                  style="width: 95%"
+                  aria-valuenow="80"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  Web Development
+                </div>
+              </div>
+              <div class="progress">
+                <div
+                  class="progress-bar bg-info"
+                  role="progressbar"
+                  style="width: 90%"
+                  aria-valuenow="70"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  Data Analysis
+                </div>
+              </div>
+              <div class="progress">
+                <div
+                  class="progress-bar bg-warning"
+                  role="progressbar"
+                  style="width: 85%"
+                  aria-valuenow="60"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  Programming
+                </div>
+              </div>
+              <div class="progress">
+                <div
+                  class="progress-bar bg-danger"
+                  role="progressbar"
+                  style="width: 60%"
+                  aria-valuenow="60"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  Designing
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column - Brief Description -->
+        <div class="col-md-6">
+          <h2>About Me</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+            odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.
+          </p>
+          <p>
+            Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.
+            Praesent mauris. Fusce nec tellus sed augue semper porta.
+          </p>
+          <p>
+            Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent
+            taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+            himenaeos.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+            quam delectus esse, facere illo recusandae labore perferendis
+            laboriosam inventore voluptatibus nobis accusamus? Velit aliquid
+            dolores aliquam corporis molestias soluta voluptatibus
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+<!-- Blogs Section -->
+<section class="blogs-section py-5" id="blogs">
+  <div class="container">
+      <h2 class="section-title text-center">My Blogs</h2>
+      <div class="row">
+          <div class="col-md-4 mb-4">
+              <div class="blog-card">
+                  <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*Owju5HOlfuThaeLsyyS40Q.png" alt="Blog 1" class="blog-img">
+                  <div class="blog-content">
+                      <h3 class="blog-title">Kickstarting Your Frontend Journey: Essential HTML and CSS Techniques for Beginners</h3>
+                      <p class="blog-excerpt">This article will explore all the important things for a beginner to start...</p>
+                      <a href="https://medium.com/@kkahmed5757/kickstarting-your-frontend-journey-essential-html-and-css-techniques-for-beginners-fbe79ae5ca95" target="_blank" class="read-more">Read More</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4 mb-4">
+              <div class="blog-card">
+                  <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*UKWsnyT1BRKR3PrbpSCfmQ.jpeg" alt="Blog 2" class="blog-img">
+                  <div class="blog-content">
+                      <h3 class="blog-title">Transforming Your Web Designs: Essential CSS Skills for 2024</h3>
+                      <p class="blog-excerpt">This comprehensive guide explores CSS from the basics to advanced techniques, including Flexbox, transforms, animations....</p>
+                      <a href="https://medium.com/@kkahmed5757/transforming-your-web-designs-essential-css-skills-for-2024-c7e47a46cb08" target="_blank" class="read-more">Read More</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4 mb-4">
+              <div class="blog-card">
+                  <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*cJqwDpNc0XgQdovPjfzOcQ.png" alt="Blog 3" class="blog-img">
+                  <div class="blog-content">
+                      <h3 class="blog-title">The Ultimate Guide to Bootstrap for Beginners
+                      </h3>
+                      <p class="blog-excerpt">This article explores essential Bootstrap features, including Grid System, Buttons, Typography, Utilities, Tables, Navbars, and Components...</p>
+                      <a href="https://medium.com/@kkahmed5757/the-ultimate-guide-to-bootstrap-for-beginners-2e7d3f175cef" target="_blank" class="read-more">Read More</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+    <center style="margin-top: 8vh; margin-bottom: 2vh">
+      <h4>My Services</h4>
+    </center>
+    <div class="container mt-4" id="ms">
+      <div class="row row-cols-1 row-cols-md-2 g-4" style="margin: 0 5vw 0 5vw;">
+        <div class="col">
+          <div class="card">
+            <img src="web.jpg" class="card-img-top" alt="Web Development">
+            <div class="card-body">
+              <h5 class="card-title">Web Development</h5>
+              <p class="card-text">I specialize in crafting responsive and user-friendly websites and web applications. From designing visually appealing interfaces using HTML, CSS, and JavaScript to implementing robust backend functionalities, I ensure seamless navigation and engaging user experiences that meet your business objectives.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="programming.jpg" class="card-img-top" alt="Programming">
+            <div class="card-body">
+              <h5 class="card-title">Programming</h5>
+              <p class="card-text">As a proficient programmer, I develop custom solutions tailored to your specific needs. Using languages such as Python, Java, and C++, I create efficient algorithms and applications that automate processes, analyze data comprehensively, and empower your operations with scalable and reliable software solutions.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="data.jpg" class="card-img-top" alt="Data Analysis">
+            <div class="card-body">
+              <h5 class="card-title">Data Analysis</h5>
+              <p class="card-text">I offer comprehensive data analysis services to extract actionable insights from complex datasets. By leveraging tools like Python, R, and SQL, I clean, analyze, and visualize data to uncover patterns, trends, and correlations. My expertise in statistical methods and machine learning enables informed decision-making and strategic planning based on data-driven insights.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="uiux.jpg" class="card-img-top" alt="UI/UX Design">
+            <div class="card-body">
+              <h5 class="card-title">UI/UX Design</h5>
+              <p class="card-text">I specialize in crafting intuitive and visually appealing user interfaces (UI) and optimizing user experiences (UX). Using tools like Adobe XD, Sketch, and Figma, I design interfaces that not only captivate users but also enhance usability and accessibility. Through iterative prototyping and user testing, I ensure your digital products deliver exceptional satisfaction and engagement.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <center><h3 style="margin-top: 5vh;">My Projects</h3></center>
+
+    <section class="portfolio-section">
+      <div class="container">
+        <div class="portfolio-btns text-center">
+          <button type="button" class="btn btn-primary filter-btn" data-filter="all">All</button>
+          <button type="button" class="btn btn-primary filter-btn" data-filter="web">Web Development</button>
+          <button type="button" class="btn btn-primary filter-btn" data-filter="programming">Programming</button>
+          <button type="button" class="btn btn-primary filter-btn" data-filter="data">Data Analysis</button>
+          <button type="button" class="btn btn-primary filter-btn" data-filter="uiux">UI/UX Design</button>
+        </div>
+  
+        <!-- Project grid -->
+        <div class="row project-grid">
+          <!-- Web Development Projects -->
+          <div class="col-lg-4 col-md-6 project-item web">
+            <div class="project-overlay">
+              <div class="project-icons">
+                <a href="#" title="More Details"><i class="fas fa-info-circle fa-lg"></i></a>
+                <a href="#" title="Contact"><i class="fas fa-envelope fa-lg"></i></a>
+              </div>
+            </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRepj5QwYwa1rkpTodR9C3td2GyfW2BNBrsyw&s" class="img-fluid" alt="Web Project 1">
+          </div>
+          <div class="col-lg-4 col-md-6 project-item web">
+            <div class="project-overlay">
+              <div class="project-icons">
+                <a href="#" title="More Details"><i class="fas fa-info-circle fa-lg"></i></a>
+                <a href="#" title="Contact"><i class="fas fa-envelope fa-lg"></i></a>
+              </div>
+            </div>
+            <img src="https://media.istockphoto.com/id/1358013032/photo/web-development-concept.jpg?s=612x612&w=0&k=20&c=d0F_7Rs2bysfEL9zr9JVN1TLzVOlEycNkz-vd19OANA=" class="img-fluid" alt="Web Project 2">
+          </div>
+          <div class="col-lg-4 col-md-6 project-item web">
+            <div class="project-overlay">
+              <div class="project-icons">
+                <a href="#" title="More Details"><i class="fas fa-info-circle fa-lg"></i></a>
+                <a href="#" title="Contact"><i class="fas fa-envelope fa-lg"></i></a>
+              </div>
+            </div>
+            <img src="https://t4.ftcdn.net/jpg/02/83/46/33/360_F_283463385_mfnrx6RPU3BqObhVuVjYZjeZ5pegE7xq.jpg" class="img-fluid" alt="Web Project 3">
+          </div>
+  
+          <!-- Programming Projects -->
+          <div class="col-lg-4 col-md-6 project-item programming">
+            <div class="project-overlay">
+              <div class="project-icons">
+                <a href="#" title="More Details"><i class="fas fa-info-circle fa-lg"></i></a>
+                <a href="#" title="Contact"><i class="fas fa-envelope fa-lg"></i></a>
+              </div>
+            </div>
+            <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Best-Programming-Languages-to-Start-Learning-Today.jpg" class="img-fluid" alt="Programming Project 1">
+          </div>
+          <div class="col-lg-4 col-md-6 project-item programming">
+            <div class="project-overlay">
+              <div class="project-icons">
+                <a href="#" title="More Details"><i class="fas fa-info-circle fa-lg"></i></a>
+                <a href="#" title="Contact"><i class="fas fa-envelope fa-lg"></i></a>
+              </div>
+            </div>
+            <img src="https://miro.medium.com/v2/resize:fit:1400/0*SPjH6EGSjLcMPv8Q.jpg" class="img-fluid" alt="Programming Project 2">
+          </div>
+          <div class="col-lg-4 col-md-6 project-item programming">
+            <div class="project-overlay">
+              <div class="project-icons">
+                <a href="#" title="More Details"><i class="fas fa-info-circle fa-lg"></i></a>
+                <a href="#" title="Contact"><i class="fas fa-envelope fa-lg"></i></a>
+              </div>
+            </div>
+            <img src="https://cdn.britannica.com/30/199930-131-B3D1D347/computer.jpg" class="img-fluid" alt="Programming Project 3">
+          </div>
+  
+          <!-- Data Analysis Projects -->
+          <div class="col-lg-4 col-md-6 project-item data">
+            <div class="project-overlay">
+              <div class="project-icons">
+                <a href="#" title="More Details"><i class="fas fa-info-circle fa-lg"></i></a>
+                <a href="#" title="Contact"><i class="fas fa-envelope fa-lg"></i></a>
+              </div>
+            </div>
+            <img src="https://lpsonline.sas.upenn.edu/sites/default/files/2022-10/plpso-feratures-data-business.jpg" class="img-fluid" alt="Data Project 1">
+          </div>
+          <div class="col-lg-4 col-md-6 project-item data">
+            <div class="project-overlay">
+              <div class="project-icons">
+                <a href="#" title="More Details"><i class="fas fa-info-circle fa-lg"></i></a>
+                <a href="#" title="Contact"><i class="fas fa-envelope fa-lg"></i></a>
+              </div>
+            </div>
+            <img src="https://cdn.sanity.io/images/tlr8oxjg/production/22c3b048689e6b8cd048157c7eb3c01cce769a41-1456x816.png?w=3840&q=100&fit=clip&auto=format" class="img-fluid" alt="Data Project 2">
+          </div>
+          <div class="col-lg-4 col-md-6 project-item data">
+            <div class="project-overlay">
+              <div class="project-icons">
+                <a href="#" title="More Details"><i class="fas fa-info-circle fa-lg"></i></a>
+                <a href="#" title="Contact"><i class="fas fa-envelope fa-lg"></i></a>
+              </div>
+            </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4fJcsaHp93UbvCxL_vutmH9J5NTmuL_q-hA&s" class="img-fluid" alt="Data Project 3">
+          </div>
+  
+          <!-- UI/UX Design Projects -->
+          <div class="col-lg-4 col-md-6 project-item uiux">
+            <div class="project-overlay">
+              <div class="project-icons">
+                <a href="#" title="More Details"><i class="fas fa-info-circle fa-lg"></i></a>
+                <a href="#" title="Contact"><i class="fas fa-envelope fa-lg"></i></a>
+              </div>
+            </div>
+            <img src="https://blogassets.leverageedu.com/blog/wp-content/uploads/2020/07/30182024/UX-UI-Design.jpg" class="img-fluid" alt="UI/UX Project 1">
+          </div>
+          <div class="col-lg-4 col-md-6 project-item uiux">
+            <div class="project-overlay">
+              <div class="project-icons">
+                <a href="#" title="More Details"><i class="fas fa-info-circle fa-lg"></i></a>
+                <a href="#" title="Contact"><i class="fas fa-envelope fa-lg"></i></a>
+              </div>
+            </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKC_WU2zQl4JuM37JEtee_O5Zu8ncuvK1K5w&s" class="img-fluid" alt="UI/UX Project 2">
+          </div>
+          <div class="col-lg-4 col-md-6 project-item uiux">
+            <div class="project-overlay">
+              <div class="project-icons">
+                <a href="#" title="More Details"><i class="fas fa-info-circle fa-lg"></i></a>
+                <a href="#" title="Contact"><i class="fas fa-envelope fa-lg"></i></a>
+              </div>
+            </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjs1ThjpWBfM8-L042vg6iqbbjRKiRc6wW8g&s" class="img-fluid" alt="UI/UX Project 3">
+          </div>
+        </div>
+      </div>
+    </section>
+  
+      <center><h2>Lets Connect</h2></center>
+
+
+      <form class="row g-3" style="margin: 0 5vw 2vh 5vw;" id="c">
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail4">
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Password</label>
+          <input type="password" class="form-control" id="inputPassword4">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Address</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress2" class="form-label">Address 2</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">City</label>
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">State</label>
+          <select id="inputState" class="form-select">
+            <option selected>Choose...</option>
+            <option>...</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">Zip</label>
+          <input type="text" class="form-control" id="inputZip">
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Check me out
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+
+
+<section id="l">
+  &copy All rights reserved
+  <div class="social-icons">
+    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.linkedin.com/in/ahmed-ayoub-3a262b279/" class="social-icon"><i class="fab fa-linkedin"></i></a>
+    <a href="https://www.github.com/AhmedAyoub5757" class="social-icon"><i class="fab fa-github"></i></a>
+  </div>
+
+</section>
+
+
+
+
+
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+
+
+
+
+
+
+
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
